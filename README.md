@@ -2,8 +2,10 @@
 ![](readme-assets/page.png)
 
 Original code by @gtongue at https://github.com/gtongue/WebGLWater
+Original version hosted at https://gtongue.github.io/WebGLWater/
 
 Modified by @dkillough and @NateD247 for CS 354 Computer Graphics
+Modified version hosted at https://dkillough.github.io/354-WebGLWaterSimulation/
 
 ## Overview
 
@@ -29,15 +31,16 @@ WebGL Water Simulation is a visualization of waves. Rendered using WebGL and GLS
 ![](readme-assets/wireframe-wave.png)
 
 ## Gerstner Waves
-To generate the wave I use grestner waves. This allows me to have steep peaks on the waves instead of always curved like a normal sign wave.
+Gerstner waves are used to generate the waveforms. Gerstner waves are modified sine waves that have steeper peaks and smoother valleys, allowing us to more accurately simulate waveforms.
 - S = Steepness 
 - A = Amplitude 
 - W = Wavelength 
 - F = Frequency
 - D = Direction
 
+Here's an excerpt from `water_vs`, the vertex shader for the water surface:
 ```glsl
-void gerstnerWave(float S, float A, float W, float F, vec2 D){
+void gerstnerWave (float S, float A, float W, float F, vec2 D){
   float w = 2.0*3.141592/W;
   S = S * steepness;
   float Q = S / (w * A);
@@ -57,7 +60,7 @@ void gerstnerWave(float S, float A, float W, float F, vec2 D){
 }
 ```
 
-Here are examples of this function being used to generate multiple waves
+And here are examples of this function being used to generate multiple waves
 - The amplitude, wavelength, and frequency here are the values from the sliders
 ```glsl
 gerstnerWave(1.0, amplitude*.3, wavelength, frequency, vec2(0.0,1.0));
@@ -65,16 +68,17 @@ gerstnerWave(1.0, amplitude*.2, wavelength, frequency, vec2(.3,.7));
 gerstnerWave(1.0, amplitude*.3, wavelength, frequency*.7, vec2(.8,.2));
 ```
 
+# Updating the project for 2022
+
 ## Housekeeping
 
 `Proposal.md` notes @gtongue's original project reposal, including the technologies used.
 
 Since this project was initially created in 2018, many of the dependencies needed to be modified; @dkillough has updated the following:
 - .gitignore now includes `package-lock.json`
-- typo in `wireframeOn()` method call
+- typos in `wireframeOn()` method call and this file (`readme.md`)
 - updated webpack config file for webpack 3.0+ (`module.rules` instead of `module.loaders`)
-  - Random person on the internet:
-  If you're getting the `Invalid configuration object. Webpack has been initialized using a configuration object that does not match the API schema` error, check out our `webpack.config.js` file on line 14 and 15. If yours says `module:` and then `loaders:`, change "loaders" to "rules".
+  - If a random person on the internet stumbles upon this who's getting the `Invalid configuration object. Webpack has been initialized using a configuration object that does not match the API schema` error, check out our `webpack.config.js` file on line 14 and 15. If yours says `module:` and then `loaders:`, change "loaders" to "rules". 
 
 ## Cloning and running the repository
 * `git clone <link>` as you would a normal repo

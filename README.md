@@ -1,11 +1,9 @@
-# [WebGL Water Simulation](https://gtongue.github.io/WebGLWater/)
+# [WebGL Water Simulation](https://dkillough.github.io/354-WebGLWaterSimulation/)
 ![](readme-assets/page.png)
 
-Original code by @gtongue at https://github.com/gtongue/WebGLWater
-Original version hosted at https://gtongue.github.io/WebGLWater/
+[Original code by @gtongue](https://github.com/gtongue/WebGLWater) | [Original version host location](https://gtongue.github.io/WebGLWater/)
 
-Modified by @dkillough and @NateD247 for CS 354 Computer Graphics
-Modified version hosted at https://dkillough.github.io/354-WebGLWaterSimulation/
+Modified by @dkillough and @NateD247 for CS 354 Computer Graphics; hosted at https://dkillough.github.io/354-WebGLWaterSimulation/
 
 ## Overview
 

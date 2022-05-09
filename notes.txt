@@ -1,0 +1,2 @@
+- Add Camera controls from project 3 so we can move around scene with mouse
+- Try to implement soft shadows if we have time. 

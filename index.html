@@ -14,9 +14,15 @@
         <h1>
           WebGL Water Simulation
         </h1>
-        <div class="checkbox-container">
-          <input type="checkbox" name="wireframe" id="wireframe">
-          <label for="wireframe"> Wireframe </label>
+        <div style="display: flex; flex-direction: row"> 
+          <div class="checkbox-container">
+            <input type="checkbox" name="wireframe" id="wireframe">
+            <label for="wireframe"> Wireframe </label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" name="Blue" id="Blue">
+            <label for="Blue"> Make Water Blue </label>
+          </div>
         </div>
       </div>
       <div class = "sliders">
@@ -68,3 +74,8 @@
   </div>
 </body>
 </html>
+<style>
+  .flex-child-element{
+    flex: 1;
+  }
+</style>

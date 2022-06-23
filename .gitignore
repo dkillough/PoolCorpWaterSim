@@ -2,3 +2,4 @@
 node_modules/
 bundle.js.map
 package-lock.json
+.idea

@@ -20,28 +20,42 @@
           <input type="checkbox" name="wireframe" id="wireframe">
           <label for="wireframe"> Wireframe </label>
         </div>
-        <div class="checkbox-container">
+        <!-- <div class="checkbox-container">
           <input type="checkbox" name="Blue" id="Blue">
           <label for="Blue"> Make Water Blue </label>
-        </div>
+        </div> -->
         <h3>Water Color:</h3>
         <div class="radio-container">
           <div class="checkbox-container">
-            <input type="radio" name="colors" id="White">
-            <label for="Green"> White </label>
+            <input type="radio" name="colors" id="white">
+            <label for="white"> White </label>
           </div>
           <div class="checkbox-container">
-            <input type="radio" name="colors" id="Tan">
-            <label for="Tan"> Tan </label>
+            <input type="radio" name="colors" id="med-blue">
+            <label for="med-blue"> Medium Blue </label>
           </div>
           <div class="checkbox-container">
-            <input type="radio" name="colors" id="Purple">
-            <label for="Purple"> Purple </label>
+            <input type="radio" name="colors" id="dark-blue">
+            <label for="dark-blue"> Dark Blue </label>
+          </div>
+        </div>
+        <div class="radio-container">
+          <div class="checkbox-container">
+            <input type="radio" name="colors" id="gray">
+            <label for="gray"> Gray </label>
+          </div>
+          <div class="checkbox-container">
+            <input type="radio" name="colors" id="tan">
+            <label for="tan"> Tan </label>
+          </div>
+          <div class="checkbox-container">
+            <input type="radio" name="colors" id="black">
+            <label for="black"> Black </label>
           </div>
         </div>
       </div>
       <div class="sliders">
-        <div class="slider-container">
+        <!-- <div class="slider-container">
           <p id="amplitudeVal"></p>
           <input id="amplitude" type="range" min="1" max="300" value="150" />
         </div>
@@ -56,9 +70,8 @@
         <div class="slider-container">
           <p id="steepnessVal"></p>
           <input id="steepness" type="range" min="0" max="100" value="100" />
-        </div>
-
-        <div class="slider-container">
+        </div> -->
+          <!-- <div class="slider-container">
           <p id="rVal"></p>
           <input id="r" type="range" min="0" max="255" value="125" />
         </div>
@@ -73,24 +86,24 @@
         <div class="slider-container">
           <p id="aVal"></p>
           <input id="a" type="range" min="0" max="255" value="125" />
-        </div>
-        <div class="slider-container">
-          <p id="timeOfDay"></p>
-          <input id="tod" type="range" min="200" max="255" value="220" />
+        </div> -->
+          <div class="slider-container">
+            <p id="timeOfDay"></p>
+            <input id="tod" type="range" min="200" max="255" value="220" />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="webgl-container">
-      <div class="info">
-        A Gerstner wave simulation using vanilla JavaScript and WebGL
-        </br>
-        Use the arrow keys on your keyboard to rotate the view
-      </div>
-      <canvas id="webgl" ref="canvas">
+      <div class="webgl-container">
+        <div class="info">
+          A Gerstner wave simulation using vanilla JavaScript and WebGL
+          </br>
+          Use the arrow keys on your keyboard to rotate the view
+        </div>
+        <canvas id="webgl" ref="canvas">
 
-      </canvas>
+        </canvas>
+      </div>
     </div>
-  </div>
 </body>
 
 </html>

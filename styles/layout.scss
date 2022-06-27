@@ -4,7 +4,7 @@
   padding: 30px;
   display: flex;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Roboto', sans-serif;
 }
 
 .webgl-container {
@@ -16,7 +16,7 @@
   box-sizing: border-box;
   width: 25%;
   height: 100%;
-  padding-left:  50px;
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -35,7 +35,7 @@
   padding: 5px;
   background-color: #cccccc;
   border: 2px solid #cccccc;
-  transition: opacity .4s, background-color .4s, border .4s;  
+  transition: opacity .4s, background-color .4s, border .4s;
   cursor: pointer;
 }
 
@@ -52,20 +52,26 @@
 }
 
 .checkbox-container {
-  padding: 20px 0;
-  width: 100%;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .radio-container {
-  display: flex; 
-  flex-direction: row;
-  padding-bottom: 20px;
+  display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+}
+
+.radio-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .info {
@@ -92,4 +98,9 @@
 .title h3 {
   font-size: 18px;
   text-align: center;
+  padding-bottom: 10px;
+}
+
+#radio-buttons {
+  padding-bottom: 20px;
 }

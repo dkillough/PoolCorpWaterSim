@@ -28,4 +28,4 @@ WebGL Water Simulation is a visualization of waves. Rendered using WebGL and GLS
 ## Gerstner Wave Simulation
 Gerstner waves are used to generate the surface of the water. Gerstner waves are modified sine waves with sharper peaks and deeper valleys, which are useful for such a purpose as simulating water for 3D graphics applications. For more reading on Gerstner waves, please see the appropriate Wikipedia article on [trochoidal waves](https://en.wikipedia.org/wiki/Trochoidal_wave).
 
-![](readme-assets/poolcorp.png)
+![](readme-assets/reflection.png)
